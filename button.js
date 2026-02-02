@@ -1,14 +1,16 @@
-// JavaScript code
 function search() {
-    let input = document.getElementById('searchbar').value
-    input = input.toLowerCase();
-    let x = document.getElementsByClassName('nav-item');
-    for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
-        }
-        else {
-            x[i].style.display = "list-item";
-        }
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+
+    if (query === "home") {
+        window.location.href = "index.html";
+    }
+    else if (query === "about" || query === "about us") {
+        window.location.href = "About.html";
+    }
+    else if (query === "contact" || query === "contact us") {
+        window.location.href = "ContactUs.html";
+    }
+    else {
+        alert("No results found for '" + query + "'. Please try 'Home' or 'About Us'.");
     }
 }
