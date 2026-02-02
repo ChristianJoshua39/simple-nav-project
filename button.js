@@ -1,11 +1,14 @@
-docuument.getElementById("btn").addEventListener("click", save);
-
-/*************  ✨ Windsurf Command 🌟  *************/
-/**
- * Save function
- * 
- * When the button is clicked, it will alert the user that the button was clicked.
- */
-function save() {
-    alert("YOU CLICKED THE BUTTON");
+// JavaScript code
+function search() {
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('nav-item');
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        }
+        else {
+            x[i].style.display = "list-item";
+        }
+    }
 }
