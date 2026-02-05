@@ -1,3 +1,17 @@
 h1 {
     text-align: center;
 }
+
+#loginbtn {
+    border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  padding: 5px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+#loginbtn:hover {
+  background-color: blue;
+  color: white;
+}
