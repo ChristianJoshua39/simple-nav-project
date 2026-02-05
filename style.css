@@ -5,6 +5,7 @@ h1 {
 #loginbtn {
     border: 1px solid blue;
   border-radius: 5px;
+  text-align: center;
   color: blue;
   padding: 5px;
   margin: 5px;

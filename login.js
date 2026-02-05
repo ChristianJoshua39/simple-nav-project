@@ -3,7 +3,7 @@ function login() {
     const password = document.getElementById("password").value;
     const message = document.getElementById("message");
 
-    if (username === "Adiyaetot" && password === "adodo") {
+    if (username === "admin" && password === "admin") {
         message.textContent = "Login successful! Redirecting...";
 
         setTimeout(function () {
