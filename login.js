@@ -3,13 +3,17 @@ function login() {
     const password = document.getElementById("password").value;
     const message = document.getElementById("message");
 
-    if (username === "admin" && password === "admin") {
+    if (username == "admin" && password == "admin") {
         message.textContent = "Login successful! Redirecting...";
 
         setTimeout(function () {
             window.location.href = "index.html";
         }, 1000);
+    }
 
+    if (username == "" || password == "") {
+        message.textContent = "Please fill in all required fields.";
+        
     } else {
         message.textContent = "Invalid username or password.";
     }
