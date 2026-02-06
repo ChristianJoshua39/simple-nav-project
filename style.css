@@ -41,3 +41,13 @@ h1 {
   border-radius: 5px;
   font-size: 20px;
 }
+
+.row {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.card {
+  box-shadow: 0px 5px 3px green;
+}
+
